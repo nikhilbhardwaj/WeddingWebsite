@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <link rel="shortcut icon" href="images/favesies.jpg" type="image/jpeg" />
+  <link rel="shortcut icon" href="favesies.jpg" type="image/jpeg" />
   <title>The Wedding Story of Nikhil &amp; Deboshrestha</title>
   <meta name="MobileOptimized" content ="width">
   <meta name="HandheldFriendly" content ="true">
@@ -16,7 +16,7 @@
   <div id="gradientbg">
     <div id="mainbg">
       <div class="mast logo">
-        <img src="images/logo-blank.png" />
+        <%= image_tag(get_image_url('logo-blank.png')) %>
       </div>
       <div id="header">
         <div id="nav-bg">
@@ -44,7 +44,7 @@
             <div id="page-header" class="mast">
               <header role="banner" class="masthead">
                 <a href="/" title="Home" rel="home" class="logo block">
-                  <img src="images/logo.png" alt="Home" />
+                  <%= image_tag(get_image_url('logo.png')) %>
                 </a>
                 <section class="region region-nav">
                   <nav id="block-menu-block-1" class="block block-menu-block first">
@@ -83,7 +83,7 @@
           <article id="block-block-4" class="block block-block first ">
             <h2><span class="dk">The</span> <span class="kg">end</span></h2>
             <p class="credits">Nikhil &amp; Deboshrestha  |    Oh &amp; they lived happily ever after</p>
-            <p><img alt="" src="images/footer.png" />​</p>
+            <p><%= image_tag(get_image_url('footer.png')) %>​</p>
           </article>
         </footer>
       </div>

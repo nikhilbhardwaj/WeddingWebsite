@@ -11,7 +11,7 @@
           <!-- TODO - Rename mars and vin also in style2.css
           Update Images here and in the page header
         -->
-        <img alt="" class="left" src="images/mars-b.jpg"  />
+        <%= image_tag(get_image_url('mars-b.jpg'), class: "left") %>
         <div class="content">
           <h3><span class="dk">Star Wars</span> fan &amp; web ninja</h3>
           <p>I knew I <strong>LOVED</strong> him when we went to Vegas for the week of his birthday. I was quite inebriated, but we had the best time hanging out and I remember looking at him and knowing that I wanted to hang out with him for the rest of my life. I slurred out, <strong> “I heart you!” </strong>
@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="vin right clearfix">
-        <img alt="" class="right" src="images/vin-g.jpg"  />
+        <%= image_tag(get_image_url('vin-g.jpg'), class: "right") %>
         <div class="content">
           <h3><span class="dk">Epic</span> cook &amp; jiu jitsu fighter</h3>
           <p>The first time we hung out, I knew there was something <strong>special</strong> about her. Not just because she had piercings in her face, but her warm smile and goofy personality.</p>
@@ -31,12 +31,12 @@
   </article>
 </section>
 <canvas id="canvas" width="269" height="292"></canvas>
-<img alt="tai" id="image1" style="display: none" src="images/tai.png" />
+<%= image_tag(get_image_url('tai.png'), id: "image1", style: "display: none", alt: "tai") %>
 <div id="theb-bg">
-  <img src="images/theb-bg.png" width="168" height="78" alt="Wedding Site Background" />
+  <%= image_tag(get_image_url('theb-bg.png'), alt: "Wedding Site Background", width: "168", height: "78") %>
 </div>
 <div id="thev-bg">
-  <img src="images/thev-bg.png" width="62" height="346" alt="Wedding Site Background" />
+  <%= image_tag(get_image_url('thev-bg.png'), alt: "Wedding Site Background", width: "62", height: "346") %>
 </div>
 </div>
 <!-- TODO : Fix alignment here -->
@@ -54,7 +54,7 @@
           <div class="clearfix whenwhereblock">
             <div class="left wheremap">
               <a href="http://maps.google.com" target="_blank">
-                <img alt="" src="images/map.jpg" />
+                <%= image_tag(get_image_url('map.jpg')) %>
               </a>
             </div>
             <div class="whereinfo">

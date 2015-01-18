@@ -170,7 +170,7 @@ img {
 body {
   font: 14px/1.5em 'Roboto', sans-serif;
   color: #0c3d4d;
-  background: url(../images/bg.jpg) top center;
+  background: url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/bg.jpg) top center;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -252,16 +252,16 @@ ul.menu,
 }
 
 #gradientbg {
-  background: url(../images/gradient-bg.jpg) top center repeat-x fixed;
+  background: url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/gradient-bg.jpg) top center repeat-x fixed;
 }
 
 #mainbg {
-  background: url(../images/mainbg.jpg) top center repeat-x fixed;
+  background: url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/mainbg.jpg) top center repeat-x fixed;
   padding-top: 130px;
 }
 
 #header {
-  background: url(../images/header-bg.jpg) top center repeat-x;
+  background: url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/header-bg.jpg) top center repeat-x;
   position: fixed;
   top: 0;
   width: 100%;
@@ -269,11 +269,11 @@ ul.menu,
 }
 
 #nav-bg {
-  background: url(../images/nav-bg.png) bottom center repeat-x;
+  background: url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/nav-bg.png) bottom center repeat-x;
 }
 
 #cloudbg {
-  background: url(../images/cloudbg.png) top center no-repeat;
+  background: url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/cloudbg.png) top center no-repeat;
 }
 
 #page-header {
@@ -292,7 +292,7 @@ ul.menu,
 }
 
 #block-menu-block-1 ul.menu li.menu-mlid-546 a {
-  background: url(../images/and.png) 67px 24px no-repeat;
+  background: url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/and.png) 67px 24px no-repeat;
 }
 
 #block-menu-block-1 ul.menu li a {
@@ -308,7 +308,7 @@ ul.menu,
 
 #wherewhere-wrap {
   padding-right: 56px;
-  background: url(../images/whenwhere-bg.png) bottom center no-repeat;
+  background: url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/whenwhere-bg.png) bottom center no-repeat;
   padding-bottom: 83px;
   margin-bottom: 80px;
   position: relative;
@@ -316,7 +316,7 @@ ul.menu,
 
 .whenwhereblock {
   padding: 14px 14px 13px 57px;
-  background: #f5f3ed url(../images/eatdrinkdance.jpg) bottom left no-repeat;
+  background: #f5f3ed url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/eatdrinkdance.jpg) bottom left no-repeat;
 }
 
 .whenwhereblock strong {
@@ -344,31 +344,31 @@ ul.menu,
 }
 
 .map-heart {
-  background: url(../images/info-heart.gif) 0 2px no-repeat;
+  background: url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/info-heart.gif) 0 2px no-repeat;
   padding-left: 60px;
   margin-left: 32%;
 }
 
 .map-time {
-  background: url(../images/info-clock.gif) 0 2px no-repeat;
+  background: url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/info-clock.gif) 0 2px no-repeat;
   padding-left: 60px;
   margin-left: 32%;
 }
 
 .map-driving {
-  background: url(../images/info-car.gif) 0 0 no-repeat;
+  background: url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/info-car.gif) 0 0 no-repeat;
   padding-left: 60px;
   margin-left: 32%;
 }
 
 .map-notsd {
-  background: url(../images/info-luggage.gif) 0 5px no-repeat;
+  background: url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/info-luggage.gif) 0 5px no-repeat;
   padding-left: 60px;
   margin-left: 32%;
 }
 
 #foot-wrap {
-  background: url(../images/footer-h2.png) top center repeat-x;
+  background: url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/footer-h2.png) top center repeat-x;
   padding-bottom: 30px;
   text-align: center;
   color: #a2f1f8;
@@ -396,31 +396,31 @@ ul.menu,
 }
 
 #main-para .wrapouter {
-  background: transparent url(../images/para1.png) top center repeat-x;
+  background: transparent url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/para1.png) top center repeat-x;
 }
 
 #main-para .outer {
-  background: transparent url(../images/para2.png) top center repeat-x;
+  background: transparent url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/para2.png) top center repeat-x;
 }
 
 #main-para .inner {
-  background: transparent url(../images/para3.png) top center repeat-x;
+  background: transparent url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/para3.png) top center repeat-x;
 }
 
 #main-para .cloud1 {
-  background: transparent url(../images/cloud5.png) top center no-repeat;
+  background: transparent url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/cloud5.png) top center no-repeat;
 }
 
 #main-para .cloud2 {
-  background: transparent url(../images/cloud2.png) top center no-repeat;
+  background: transparent url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/cloud2.png) top center no-repeat;
 }
 
 #main-para .cloud4 {
-  background: transparent url(../images/cloud4.png) top center no-repeat;
+  background: transparent url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/cloud4.png) top center no-repeat;
 }
 
 #main-para .moon {
-  background: transparent url(../images/moon.png) top center no-repeat;
+  background: transparent url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/moon.png) top center no-repeat;
 }
 
 #main-para #wrap-clouds {
@@ -438,7 +438,7 @@ ul.menu,
 
   #cloudbg,
   .masthead {
-    background: url(../images/cloudbg-ipad.png) top center no-repeat;
+    background: url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/cloudbg-ipad.png) top center no-repeat;
   }
 }
 
@@ -507,7 +507,7 @@ ul.menu,
   }
 
   #block-menu-block-1 ul.menu li.menu-mlid-546 a {
-    background: url(../images/and.png) 63px 21px no-repeat;
+    background: url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/and.png) 63px 21px no-repeat;
   }
 
   #main-para {
@@ -716,7 +716,7 @@ ul.menu,
 @media screen and (max-width:780px) {
   #mainbg,
   #header {
-    background: url(../images/mainbg-ipad.jpg) top center no-repeat fixed;
+    background: url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/mainbg-ipad.jpg) top center no-repeat fixed;
   }
 
   #cloudbg {
@@ -752,7 +752,7 @@ ul.menu,
   }
 
   #block-menu-block-1 ul.menu li.menu-mlid-546 a {
-    background: url(../images/and.png) 55px 18px no-repeat;
+    background: url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/and.png) 55px 18px no-repeat;
   }
 }
 
@@ -809,7 +809,7 @@ ul.menu,
   }
 
   #block-menu-block-1 ul.menu li.menu-mlid-546 a {
-    background: url(../images/and.png) 65px 21px no-repeat;
+    background: url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/and.png) 65px 21px no-repeat;
   }
 
   .whenwhereblock .left.wheremap {
@@ -832,7 +832,7 @@ ul.menu,
   }
 
   #foot-wrap {
-    background-image: url(../images/footer-h2-small.png);
+    background-image: url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/footer-h2-small.png);
   }
 
   p.credits {
