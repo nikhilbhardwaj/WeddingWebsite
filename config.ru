@@ -1,3 +1,3 @@
-require 'app/weddingsite'
+require './app/weddingsite'
 
 run WeddingSite
