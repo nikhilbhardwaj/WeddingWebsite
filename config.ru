@@ -1,3 +1,3 @@
-require 'app/hello'
+require 'app/weddingsite'
 
-run Sinatra::Application
+run WeddingSite
