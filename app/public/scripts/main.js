@@ -5,7 +5,7 @@ $(function() {
       setTimeout(function() {window.scrollTo(0,0.9)} ,0)
     });
   }
-  
+
   // Initialize Parallax for the fun effects at the top of the page
   $('body').parallax({
     'elements': [
