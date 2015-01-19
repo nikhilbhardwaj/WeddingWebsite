@@ -291,10 +291,6 @@ ul.menu,
   padding: 0 25px;
 }
 
-#block-menu-block-1 ul.menu li.menu-mlid-546 a {
-  background: url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/and.png) 67px 24px no-repeat;
-}
-
 #block-menu-block-1 ul.menu li a {
   display: inline;
   color: #FFF;
@@ -504,10 +500,6 @@ ul.menu,
   #block-menu-block-1 ul.menu li {
     padding: 0 8px;
     font-size: 25px;
-  }
-
-  #block-menu-block-1 ul.menu li.menu-mlid-546 a {
-    background: url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/and.png) 63px 21px no-repeat;
   }
 
   #main-para {
@@ -750,10 +742,6 @@ ul.menu,
     padding: 0 8px;
     font-size: 22px;
   }
-
-  #block-menu-block-1 ul.menu li.menu-mlid-546 a {
-    background: url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/and.png) 55px 18px no-repeat;
-  }
 }
 
 @media screen and (max-width:708px) {
@@ -806,10 +794,6 @@ ul.menu,
     padding: 0 8px;
     font-size: 26px;
     line-height: 40px;
-  }
-
-  #block-menu-block-1 ul.menu li.menu-mlid-546 a {
-    background: url(https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/and.png) 65px 21px no-repeat;
   }
 
   .whenwhereblock .left.wheremap {
