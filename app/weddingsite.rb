@@ -18,6 +18,6 @@ class WeddingSite < Sinatra::Base
 
   private
   def get_image_url(image)
-    "https://dl.dropboxusercontent.com/u/17489490/WeddingWebsite/site-images/#{image}"
+    "https://dl.dropboxusercontent.com/u/58780672/WeddingWebsite/site-images/#{image}"
   end
 end
