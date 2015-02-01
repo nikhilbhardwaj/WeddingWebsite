@@ -380,6 +380,11 @@ ul.menu, .mast {
 
 /*Our Story*/
 
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
 #theb-bg {
   position: absolute;
   top: -10px;
