@@ -237,7 +237,7 @@ ul.menu, .mast {
 
 .whenwhereblock {
   padding: 14px 14px 13px 57px;
-  background: #f5f3ed url(https://dl.dropboxusercontent.com/u/58780672/WeddingWebsite/site-images/eatdrinkdance.jpg) bottom left no-repeat;
+  background: #f5f3ed url(https://dl.dropboxusercontent.com/u/58780672/WeddingWebsite/site-images/ganeshji.png) top left no-repeat; 
 }
 
 .whenwhereblock strong {
@@ -265,13 +265,18 @@ ul.menu, .mast {
 }
 
 .map-heart {
-  background: url(https://dl.dropboxusercontent.com/u/58780672/WeddingWebsite/site-images/info-heart.gif) 0 2px no-repeat;
+  background: url(https://dl.dropboxusercontent.com/u/58780672/WeddingWebsite/site-images/info-heart.png) 0 2px no-repeat;
   padding-left: 60px;
   margin-left: 32%;
 }
 
+.map-mehendi{
+  background: url(https://dl.dropboxusercontent.com/u/58780672/WeddingWebsite/site-images/info-mehendi.png) 0 2px no-repeat;
+  padding-left: 60px;
+  margin-left: 32%
+}
 .map-time {
-  background: url(https://dl.dropboxusercontent.com/u/58780672/WeddingWebsite/site-images/info-clock.gif) 0 2px no-repeat;
+  background: url(https://dl.dropboxusercontent.com/u/58780672/WeddingWebsite/site-images/info-clock.png) 0 2px no-repeat;
   padding-left: 60px;
   margin-left: 32%;
 }
