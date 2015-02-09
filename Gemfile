@@ -1,7 +1,11 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
-ruby "2.2.0"
+ruby "1.9.3"
 
-gem 'unicorn'
+group :production do
+  gem 'unicorn'
+end
 gem 'sinatra'
 gem 'sinatra-static-assets'
+gem 'sass'
+gem 'bootstrap-sass', '~> 3.3.3'
