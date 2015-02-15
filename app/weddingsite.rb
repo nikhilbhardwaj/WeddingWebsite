@@ -24,7 +24,7 @@ class WeddingSite < Sinatra::Base
   end
 
   get '/gifts' do
-    'Here\'s what you should gift us :)'
+    erb :gifts
   end
 
   get '/login' do
