@@ -43,6 +43,8 @@ a:active, a:hover {
   outline: 0;
 }
 
+
+
 h2 {
   font-size: 1.5em;
   margin: 0 0 0.83em 0;
@@ -467,4 +469,31 @@ ul.menu, .mast {
 // Usage as mixins
 .element {
   .center-block();
+}
+
+.gifts-section
+{
+  width: 1000px ;
+  margin-left: auto ;
+  margin-right: auto ;
+  background-color: white;
+  border-radius: 10px;
+
+}
+
+.gifts
+{
+margin: 25px;
+color : white;
+font-size: 35px;
+font-family: Pristina;
+font-style: bold;
+text-align: center;
+}
+.gifts-text
+{
+  margin: 20px 20px 20px 20px;
+  color: red;
+  font-size: 20px;
+  font-family: Pristina;
 }

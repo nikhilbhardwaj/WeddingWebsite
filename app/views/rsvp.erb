@@ -2,7 +2,14 @@
 <% if session['access_token'] %>
   <form class="form-horizontal">
   <fieldset>
+  
+  <div class="forms">
   <h2>Répondez s'il vous plaît</h2>
+</div>
+
+<div class="form-style">
+</br>
+ <div class="form-text">
   <div class="form-group">
     <label class="col-md-4 control-label" for="attending_radios">Attending?</label>
     <!-- Radio buttons (inline) -->
@@ -45,7 +52,7 @@
   <div class="form-group">
     <label class="col-md-4 control-label" for="textarea">Any Comments?</label>
     <div class="col-md-4">
-      <textarea class="form-control" id="textarea" name="textarea">Anything that you want to let us know comes here.
+      <textarea placeholder = "Anything that you want to let us know comes here. Also please mention the dates you will grace us with your esteemed presence so that we can make necessary accommodation arrangements" class="form-control" id="textarea" name="textarea" > 
   </textarea>
     </div>
   </div>
@@ -58,7 +65,10 @@
       <button id="discard_button" name="discard_button" class="btn btn-danger">Discard</button>
     </div>
   </div>
-
+</div>
+</br>
+</div>
+</div>
   </fieldset>
   </form>
 <% else %>
