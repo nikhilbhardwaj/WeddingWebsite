@@ -45,11 +45,6 @@ class WeddingSite < Sinatra::Base
     session['access_token'] = session['oauth'].get_access_token(params[:code])
     redirect '/rsvp'
   end
-
-
-    get '/rsvp' do   
-      erb :rsvp
-    end
   
   private
   def get_image_url(image)
