@@ -141,19 +141,17 @@ $(function() {
   }
 
   function init() {
-
     // Set main canvas and context references
     canvas = document.getElementById("canvas");
-    ctx = canvas.getContext("2d");
-
-    // Initialize animations
-    tai.followOrientation = -90.00 * Math.PI / 180.0;
-
-    // Start animation clocks
-    animations[0].pathClock.start();
-
-    // Set animation timer
-    setInterval(drawFrame, (1000 / fps));
+    if (canvas) {
+      ctx = canvas.getContext("2d");
+      // Initialize animations
+      tai.followOrientation = -90.00 * Math.PI / 180.0;
+      // Start animation clocks
+      animations[0].pathClock.start();
+      // Set animation timer
+      setInterval(drawFrame, (1000 / fps));
+    }
   }
 
   function updateAnimations() {
