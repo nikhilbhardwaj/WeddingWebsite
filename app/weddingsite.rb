@@ -43,7 +43,7 @@ class WeddingSite < Sinatra::Base
   get '/callback' do
     #get the access token from facebook with your code
     session['access_token'] = session['oauth'].get_access_token(params[:code])
-    redirect '/'
+    redirect '/rsvp'
   end
 
 
