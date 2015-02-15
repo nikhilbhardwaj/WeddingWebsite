@@ -1,11 +1,9 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-ruby "1.9.3"
+ruby "2.2.0"
 
-group :production do
-  gem 'unicorn'
-end
+gem 'unicorn'
 gem 'sinatra'
 gem 'sinatra-static-assets'
-gem 'sass'
-gem 'bootstrap-sass', '~> 3.3.3'
+gem 'koala'
+gem 'dotenv-rails', :groups => [:development, :test]
