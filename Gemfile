@@ -7,3 +7,4 @@ gem 'sinatra'
 gem 'sinatra-static-assets'
 gem 'koala'
 gem 'dotenv-rails', :groups => [:development, :test]
+

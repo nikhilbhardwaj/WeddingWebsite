@@ -43,9 +43,9 @@ class WeddingSite < Sinatra::Base
   get '/callback' do
     #get the access token from facebook with your code
     session['access_token'] = session['oauth'].get_access_token(params[:code])
-    redirect '/'
+    redirect '/rsvp'
   end
-
+  
   private
   def get_image_url(image)
     "https://dl.dropboxusercontent.com/u/58780672/WeddingWebsite/site-images/#{image}"
