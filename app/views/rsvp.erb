@@ -2,13 +2,12 @@
 <% if session['access_token'] %>
   <form class="form-horizontal">
   <fieldset>
-  
+
   <div class="forms">
   <h2>Répondez s'il vous plaît</h2>
 </div>
 
 <div class="form-style">
-</br>
  <div class="form-text">
   <div class="form-group">
     <label class="col-md-4 control-label" for="attending_radios">Attending?</label>
@@ -31,17 +30,17 @@
 
   <!-- Multiple Checkboxes -->
   <div class="form-group">
-    <label class="col-md-4 control-label" for="loactions_checkboxes">Where will we see you?</label>
+    <label class="col-md-4 control-label" for="locations_checkboxes">Where will we see you?</label>
     <div class="col-md-4">
     <div class="checkbox">
-      <label for="loactions_checkboxes-0">
-        <input type="checkbox" name="loactions_checkboxes" id="loactions_checkboxes-0" value="1">
+      <label for="locations_checkboxes-0">
+        <input type="checkbox" name="locations_checkboxes" id="locations_checkboxes-0" value="1">
         The Wedding
       </label>
     </div>
     <div class="checkbox">
-      <label for="loactions_checkboxes-1">
-        <input type="checkbox" name="loactions_checkboxes" id="loactions_checkboxes-1" value="2">
+      <label for="locations_checkboxes-1">
+        <input type="checkbox" name="locations_checkboxes" id="locations_checkboxes-1" value="2">
         The Reception
       </label>
     </div>
@@ -52,7 +51,10 @@
   <div class="form-group">
     <label class="col-md-4 control-label" for="textarea">Any Comments?</label>
     <div class="col-md-4">
-      <textarea class="form-control" id="textarea" name="textarea">Anything that you want to let us know comes here.
+      <textarea class="form-control" id="textarea" name="textarea">
+        When do you plan to come?
+        What do you think of our website?
+        Or anything else that you want to let us know comes here.
       </textarea>
     </div>
   </div>
