@@ -1,6 +1,6 @@
 <div class="offset" id="rsvp"></div>
 <% if session['access_token'] %>
-  <form class="form-horizontal">
+  <form class="form-horizontal" method="POST" action="/rsvp">
   <fieldset>
 
   <div class="forms">
@@ -63,8 +63,8 @@
   <div class="form-group">
     <label class="col-md-4 control-label" for="save_button">Done?</label>
     <div class="col-md-8">
-      <button id="save_button" name="save_button" class="btn btn-success">Save</button>
-      <button id="discard_button" name="discard_button" class="btn btn-danger">Discard</button>
+      <button id="save_button" name="action" value="save" class="btn btn-success">Save</button>
+      <button id="discard_button" name="action" value="discard" class="btn btn-danger">Discard</button>
     </div>
   </div>
 </div>
