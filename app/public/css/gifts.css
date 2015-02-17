@@ -1,0 +1,66 @@
+.gifts-section
+{
+  width: 1000px ;
+  margin-left: auto ;
+  margin-right: auto ;
+  background-color: white;
+  border-radius: 10px;
+
+}
+
+.gifts
+{
+margin: 25px;
+color : white;
+font-size: 35px;
+font-family: Pristina;
+font-style: bold;
+text-align: center;
+}
+.gifts-text
+{
+  margin: 20px 20px 20px 20px;
+  color: red;
+  font-size: 20px;
+  font-family: Pristina;
+}
+
+
+
+
+ul.no-bullets {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+li.amazon{
+  background: url(https://dl.dropboxusercontent.com/u/58780672/WeddingWebsite/site-images/amazon-gift.png) no-repeat left top;
+  height: 54px;
+  padding-left: 44px;
+  padding-top: 3px;
+}
+
+li.google{
+  background: url(https://dl.dropboxusercontent.com/u/58780672/WeddingWebsite/site-images/google-play.png) no-repeat left top;
+  height: 54px;
+  padding-left: 44px;
+  padding-top: 3px;
+
+}
+
+li.itunes{
+  background: url(https://dl.dropboxusercontent.com/u/58780672/WeddingWebsite/site-images/apple-icon.png) no-repeat left top;
+  height: 54px;
+  padding-left: 44px;
+  padding-top: 3px;
+
+}
+
+li.target{
+  background: url(https://dl.dropboxusercontent.com/u/58780672/WeddingWebsite/site-images/target-icon.png) no-repeat left top;
+  height: 54px;
+  padding-left: 44px;
+  padding-top: 3px;
+
+}

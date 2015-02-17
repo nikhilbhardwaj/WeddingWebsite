@@ -22,3 +22,13 @@ text-align: center;
   color: red;
   font-size: 18px;
 }
+
+textarea
+{
+	color: black;
+}
+
+.log-fb
+{
+	color: white;
+}
