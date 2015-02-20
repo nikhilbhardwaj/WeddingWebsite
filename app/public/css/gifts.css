@@ -27,40 +27,38 @@ text-align: center;
 
 
 
-
-ul.no-bullets {
-list-style-type: none;
-padding: 0;
-margin: 0;
-}
-
-li.amazon{
+label.amazon{
   background: url(https://dl.dropboxusercontent.com/u/58780672/WeddingWebsite/site-images/amazon-gift.png) no-repeat left top;
   height: 54px;
-  padding-left: 44px;
+  padding-left: 100px;
   padding-top: 3px;
+  margin-left: 60px;
+
 }
 
-li.google{
+label.google{
   background: url(https://dl.dropboxusercontent.com/u/58780672/WeddingWebsite/site-images/google-play.png) no-repeat left top;
   height: 54px;
-  padding-left: 44px;
+  padding-left: 100px;
   padding-top: 3px;
+  margin-left: 60px;
 
 }
 
-li.itunes{
+label.itunes{
   background: url(https://dl.dropboxusercontent.com/u/58780672/WeddingWebsite/site-images/apple-icon.png) no-repeat left top;
   height: 54px;
-  padding-left: 44px;
+  padding-left: 100px;
   padding-top: 3px;
+  margin-left: 60px;
 
 }
 
-li.target{
+label.target{
   background: url(https://dl.dropboxusercontent.com/u/58780672/WeddingWebsite/site-images/target-icon.png) no-repeat left top;
   height: 54px;
-  padding-left: 44px;
+  padding-left: 100px;
   padding-top: 3px;
+  margin-left: 60px;
 
 }
