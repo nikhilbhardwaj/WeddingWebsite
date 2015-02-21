@@ -5,7 +5,7 @@ DataMapper::Property::String.length(255)
 
 class Rsvp
   include DataMapper::Resource
-  property :id, Integer, key: true
+  property :id, String, key: true
   property :token, String
   property :attending, Integer
   property :locations, CommaSeparatedList

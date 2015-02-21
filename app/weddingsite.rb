@@ -24,7 +24,11 @@ class WeddingSite < Sinatra::Base
 
   get '/rsvp' do
     # Prefetch RSVP if it is set
-    # @rsvp = load from DB
+    if session['access_token']
+      profile = get_fb_profile
+      @rsvp = Rsvp.get(profile['id'])
+    end
+    # Update ERB to prepopulate the values that had been filled in
     erb :rsvp
   end
 
@@ -57,12 +61,37 @@ class WeddingSite < Sinatra::Base
 
   # Handle the Save and Discard Buttons on the RSVP page
   post '/rsvp' do
-    puts params[:action]
+    ensure_valid_session
+    if params[:action] == "save"
+      profile = get_fb_profile
+      # construct rsvp from form and id
+      rsvp = Rsvp.new
+      rsvp.id = profile['id']
+      rsvp.token = session['access_token']
+      rsvp.attending = params[:attending_radios]
+      rsvp.locations = params['locations_checkboxes']
+      rsvp.comments = params[:textarea]
+      rsvp.save
+    end
     redirect '/rsvp' , notice: 'Your action was successful'
+  end
+
+  helpers do
+    def ensure_valid_session
+      halt 500 if !session['access_token']
+    end
   end
 
   private
   def get_image_url(image)
     "https://dl.dropboxusercontent.com/u/58780672/WeddingWebsite/site-images/#{image}"
+  end
+
+  # Fetches the FB profile of the logged in user
+  # This can be used for further meaningful queries
+  def get_fb_profile
+    graph = Koala::Facebook::API.new(session['access_token'])
+    profile = graph.get_object('me')
+    profile
   end
 end
