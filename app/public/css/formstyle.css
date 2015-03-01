@@ -43,3 +43,34 @@ p.log-fb-text
   color: black;
   font-size: 18px;
 }
+
+h2.welcome-msg
+{
+color: maroon;
+font-family: Pristina;
+font-size: 20px;
+margin-top:12px;
+padding-top: 12px;
+margin-left:700px;
+}
+
+a.logout
+{
+color:maroon;
+}
+
+div.not-invited
+{
+  width: 1000px ;
+  margin-left: auto ;
+  margin-right: auto ;
+  background-color: white;
+  border-radius: 10px;
+}
+
+p.not-invited-text
+{
+  margin: 10px 20px 20px 20px;
+  color: black;
+  font-size: 18px;
+}

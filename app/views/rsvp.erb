@@ -1,14 +1,34 @@
 <div class="offset" id="rsvp"></div>
+
 <% if session['access_token'] %>
-  <form class="form-horizontal" method="POST" action="/rsvp">
-  <fieldset>
+
+<% # to validate if the user in either of me and Nikhil's friend list
+    graph = Koala::Facebook::API.new(session['access_token'])
+    profile = graph.get_object('me')
+
+    #profile will be a JSON array , retrieve the name from there and display it
+
+    #get the friends list and see what all it displays  
+    friends = graph.get_connections('me','friends')
+    #print friends
+    #print friends.count
+    
+    #also we need to do a check for me and Nikhil, so that we can login and do anything
+    me_or_nikhil = (profile["id"] == ENV["debo_id"] || profile["id"] == ENV["nikhil_id"])?true:false
+    includes_value = friends.include?({"name"=>"Nikhil Bhardwaj","id"=>ENV["nikhil_id"]}) || friends.include?({"name"=>"Deboshrestha De","id"=>ENV["debo_id"]}) 
+%>
+  <%if includes_value || me_or_nikhil %>
+    <form class="form-horizontal" method="POST" action="/rsvp">
+    <fieldset>
 
   <div class="forms">
-  <h2>Répondez s'il vous plaît</h2>
-</div>
+    <h2>Répondez s'il vous plaît</h2>
+  </div>
+
 
 <div class="form-style">
  <div class="form-text">
+   <h2 class="welcome-msg"><%='Welcome ' + profile["first_name"].downcase + '! | ' %> <a class="logout" href ="/logout"> logout </a></h2>
   <div class="form-group">
     <label class="col-md-4 control-label" for="attending_radios">Attending?</label>
     <!-- Radio buttons (inline) -->
@@ -73,6 +93,9 @@
 </div>
   </fieldset>
   </form>
+  <%else %>
+    <div class="not-invited"><p class="not-invited-text">You need to be in our friend list in order to get invited for this event. Kindly send us a friend request first. </p></div>
+  <% end %>
 <% else %>
   <div class="log-fb-block"><p class="log-fb-text">You need to be logged in via facebook to RSVP. Click <%= link_to("here", "/login") %> to log in. </p></div>
 <% end %>
