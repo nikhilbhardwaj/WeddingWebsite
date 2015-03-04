@@ -65,7 +65,7 @@ class WeddingSite < Sinatra::Base
     if params[:action] == "save"
       profile = get_fb_profile
       # construct rsvp from form and id
-      rsvp = Rsvp.new
+      rsvp = Rsvp.get(profile['id']) || Rsvp.new
       rsvp.id = profile['id']
       rsvp.token = session['access_token']
       rsvp.attending = params[:attending_radios]

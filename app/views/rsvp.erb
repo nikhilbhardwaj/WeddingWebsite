@@ -2,22 +2,13 @@
 
 <% if session['access_token'] %>
 
-<% # to validate if the user in either of me and Nikhil's friend list
+<% 
     graph = Koala::Facebook::API.new(session['access_token'])
     profile = graph.get_object('me')
-
-    #profile will be a JSON array , retrieve the name from there and display it
-
-    #get the friends list and see what all it displays  
     friends = graph.get_connections('me','friends')
-    #print friends
-    #print friends.count
-    
-    #also we need to do a check for me and Nikhil, so that we can login and do anything
-    me_or_nikhil = (profile["id"] == ENV["debo_id"] || profile["id"] == ENV["nikhil_id"])?true:false
-    includes_value = friends.include?({"name"=>"Nikhil Bhardwaj","id"=>ENV["nikhil_id"]}) || friends.include?({"name"=>"Deboshrestha De","id"=>ENV["debo_id"]}) 
+    includes_value = friends.include?({"id"=>ENV["nikhil_id"]}) || friends.include?({"id"=>ENV["debo_id"]}) 
 %>
-  <%if includes_value || me_or_nikhil %>
+  <%if includes_value %>
     <form class="form-horizontal" method="POST" action="/rsvp">
     <fieldset>
 
