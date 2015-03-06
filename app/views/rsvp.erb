@@ -2,13 +2,10 @@
 
 <% if session['access_token'] %>
 
-<% 
-    graph = Koala::Facebook::API.new(session['access_token'])
-    profile = graph.get_object('me')
-    friends = graph.get_connections('me','friends')
-    includes_value = friends.include?({"id"=>ENV["nikhil_id"]}) || friends.include?({"id"=>ENV["debo_id"]}) 
+<%   
+	includes_friends = @friends.include?({"id"=>ENV["nikhil_id"]}) || @friends.include?({"id"=>ENV["debo_id"]}) 
 %>
-  <%if includes_value %>
+  <%if includes_friends %>
     <form class="form-horizontal" method="POST" action="/rsvp">
     <fieldset>
 
@@ -19,7 +16,7 @@
 
 <div class="form-style">
  <div class="form-text">
-   <h2 class="welcome-msg"><%='Welcome ' + profile["first_name"].downcase + '! | ' %> <a class="logout" href ="/logout"> logout </a></h2>
+   <h2 class="welcome-msg"><%='Welcome ' + @profile["first_name"].downcase + '! | ' %> <a class="logout" href ="/logout"> logout </a></h2>
   <div class="form-group">
     <label class="col-md-4 control-label" for="attending_radios">Attending?</label>
     <!-- Radio buttons (inline) -->
