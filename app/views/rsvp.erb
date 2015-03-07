@@ -4,7 +4,6 @@
 
 <%   
 	includes_friends = @friends.include?({"name"=>"Nikhil Bhardwaj","id"=>ENV["nikhil_id"]}) || @friends.include?({"name"=>"Deboshrestha De" ,"id"=>ENV["debo_id"]}) 
-	print includes_friends
 %>
   <%if includes_friends %>
     <form class="form-horizontal" method="POST" action="/rsvp">
