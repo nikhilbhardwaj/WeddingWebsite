@@ -3,9 +3,11 @@
 <% if session['access_token'] %>
 
 <%   
-	includes_friends = @friends.include?({"id"=>ENV["nikhil_id"]}) || @friends.include?({"id"=>ENV["debo_id"]}) 
+	me_or_nikhil = (@profile["id"] == ENV["debo_id"] || @profile["id"] == ENV["nikhil_id"])?true:false	
+	includes_friends = @friends.include?({"name"=>"Nikhil Bhardwaj","id"=>ENV["nikhil_id"]}) || @friends.include?({"name"=>"Deboshrestha De" ,"id"=>ENV["debo_id"]}) 
+	print includes_friends
 %>
-  <%if includes_friends %>
+  <%if includes_friends || me_or_nikhil %>
     <form class="form-horizontal" method="POST" action="/rsvp">
     <fieldset>
 
