@@ -95,6 +95,6 @@ class WeddingSite < Sinatra::Base
     graph = Koala::Facebook::API.new(session['access_token'])
     profile = graph.get_object('me')
     friends = graph.get_connections('me','friends')
-    profile, friends
+    return [profile, friends]
   end
 end
