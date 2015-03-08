@@ -1,11 +1,6 @@
 <div class="offset" id="rsvp"></div>
 
 <% if session['access_token'] %>
-
-<%   
-	includes_friends = @friends.include?({"name"=>"Nikhil Bhardwaj","id"=>ENV["nikhil_id"]}) || @friends.include?({"name"=>"Deboshrestha De" ,"id"=>ENV["debo_id"]}) 
-%>
-  <%if includes_friends %>
     <form class="form-horizontal" method="POST" action="/rsvp">
     <fieldset>
 
@@ -81,9 +76,6 @@
 </div>
   </fieldset>
   </form>
-  <%else %>
-    <div class="not-invited"><p class="not-invited-text">You need to be in our friend list in order to get invited for this event. Kindly send us a friend request first. </p></div>
-  <% end %>
 <% else %>
   <div class="log-fb-block"><p class="log-fb-text">You need to be logged in via facebook to RSVP. Click <%= link_to("here", "/login") %> to log in. </p></div>
 <% end %>
