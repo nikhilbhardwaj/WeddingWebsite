@@ -3,7 +3,7 @@
 <% if session['access_token'] %>
 
 <%   
-	includes_friends = @friends.include?({"id"=>ENV["nikhil_id"]}) || @friends.include?({"id"=>ENV["debo_id"]}) 
+	includes_friends = @friends.include?({"name"=>"Nikhil Bhardwaj","id"=>ENV["nikhil_id"]}) || @friends.include?({"name"=>"Deboshrestha De" ,"id"=>ENV["debo_id"]}) 
 %>
   <%if includes_friends %>
     <form class="form-horizontal" method="POST" action="/rsvp">
