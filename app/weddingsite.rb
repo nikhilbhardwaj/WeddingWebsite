@@ -72,6 +72,7 @@ class WeddingSite < Sinatra::Base
       rsvp.token = session['access_token']
       rsvp.attending = params[:attending_radios]
       rsvp.locations = params['locations_checkboxes']
+      rsvp.email = params[:guestEmail]
       rsvp.comments = params[:textarea]
       rsvp.save
     end

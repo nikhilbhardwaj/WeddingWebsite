@@ -9,6 +9,7 @@ class Rsvp
   property :token, String
   property :attending, Integer
   property :locations, CommaSeparatedList
+  property :email, String
   property :comments, Text
 end
 
