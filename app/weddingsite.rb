@@ -25,11 +25,10 @@ class WeddingSite < Sinatra::Base
   get '/rsvp' do
     # Prefetch RSVP if it is set
     if session['access_token']
-      @profile = get_fb_profile
+      @profile , @friends = get_fb_profile
       p @profile
-      @rsvp = Rsvp.get(@profile['id'])
-      @friends = get_fb_friends
       p @friends
+      @rsvp = Rsvp.get(@profile['id'])
     end
     # Update ERB to prepopulate the values that had been filled in
     erb :rsvp
@@ -66,7 +65,7 @@ class WeddingSite < Sinatra::Base
   post '/rsvp' do
     ensure_valid_session
     if params[:action] == "save"
-      profile = get_fb_profile
+      profile = get_fb_profile.first
       # construct rsvp from form and id
       rsvp = Rsvp.get(profile['id']) || Rsvp.new
       rsvp.id = profile['id']
@@ -94,13 +93,8 @@ class WeddingSite < Sinatra::Base
   # This can be used for further meaningful queries
   def get_fb_profile
     graph = Koala::Facebook::API.new(session['access_token'])
-    @profile = graph.get_object('me')
-    @profile
-  end
-
-  def get_fb_friends
-     graph = Koala::Facebook::API.new(session['access_token'])
-     @friends = graph.get_connections('me','friends')
-     @friends
+    profile = graph.get_object('me')
+    friends = graph.get_connections('me','friends')
+    profile, friends
   end
 end
