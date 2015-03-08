@@ -26,8 +26,10 @@ class WeddingSite < Sinatra::Base
     # Prefetch RSVP if it is set
     if session['access_token']
       @profile = get_fb_profile
+      p @profile
       @rsvp = Rsvp.get(@profile['id'])
       @friends = get_fb_friends
+      p @friends
     end
     # Update ERB to prepopulate the values that had been filled in
     erb :rsvp
