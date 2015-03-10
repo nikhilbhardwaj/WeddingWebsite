@@ -10,6 +10,7 @@ class Rsvp
   property :attending, Integer
   property :locations, CommaSeparatedList
   property :email, String
+  property :phone, Text
   property :comments, Text
 end
 

@@ -20,9 +20,10 @@ text-align: center;
 .gifts-text
 {
   margin: 20px 20px 20px 20px;
-  color: red;
+  color: blue;
+  font-style: bold;
   font-size: 20px;
-  font-family: Pristina;
+  font-family: sans-serif;
 }
 
 
