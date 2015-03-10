@@ -46,7 +46,7 @@ class WeddingSite < Sinatra::Base
     # generate a new oauth object with your app data and your callback url
     session['oauth'] = Koala::Facebook::OAuth.new(ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_SECRET'], "#{request.base_url}/callback")
     # redirect to facebook to get your code
-    redirect session['oauth'].url_for_oauth_code()
+    redirect session['oauth'].url_for_oauth_code
   end
 
   get '/logout' do
@@ -72,6 +72,8 @@ class WeddingSite < Sinatra::Base
       rsvp.token = session['access_token']
       rsvp.attending = params[:attending_radios]
       rsvp.locations = params['locations_checkboxes']
+      rsvp.email = profile['email']
+      rsvp.phone = params['phoneNum']
       rsvp.comments = params[:textarea]
       rsvp.save
     end

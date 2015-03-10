@@ -277,6 +277,12 @@ ul.menu, .mast {
   padding-left: 60px;
   margin-left: 32%
 }
+
+.map-reception{
+  background: url(https://dl.dropboxusercontent.com/u/58780672/WeddingWebsite/site-images/info-reception.png) 0 2px no-repeat;
+  padding-left: 60px;
+  margin-left: 32%
+}
 .map-time {
   background: url(https://dl.dropboxusercontent.com/u/58780672/WeddingWebsite/site-images/info-clock.png) 0 2px no-repeat;
   padding-left: 60px;
@@ -299,7 +305,7 @@ ul.menu, .mast {
   background: url(https://dl.dropboxusercontent.com/u/58780672/WeddingWebsite/site-images/footer-h2.png) top center repeat-x;
   padding-bottom: 30px;
   text-align: center;
-  color: #a2f1f8;
+  color: #003366;
   font-size: 10px;
   width: 100%;
 }
