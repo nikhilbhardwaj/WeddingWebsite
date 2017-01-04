@@ -25,9 +25,9 @@ class WeddingSite < Sinatra::Base
   get '/rsvp' do
     # Prefetch RSVP if it is set
     if session['access_token']
-      @profile , @friends = get_fb_profile
+      @profile = get_fb_profile
       p @profile
-      p @friends
+     # p @friends
       @rsvp = Rsvp.get(@profile['id'])
     end
     # Update ERB to prepopulate the values that had been filled in
@@ -46,7 +46,7 @@ class WeddingSite < Sinatra::Base
     # generate a new oauth object with your app data and your callback url
     session['oauth'] = Koala::Facebook::OAuth.new(ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_SECRET'], "#{request.base_url}/callback")
     # redirect to facebook to get your code
-    redirect session['oauth'].url_for_oauth_code
+    redirect session['oauth'].url_for_oauth_code(:permissions=>"email")
   end
 
   get '/logout' do
@@ -65,7 +65,7 @@ class WeddingSite < Sinatra::Base
   post '/rsvp' do
     ensure_valid_session
     if params[:action] == "save"
-      profile = get_fb_profile.first
+      profile = get_fb_profile
       # construct rsvp from form and id
       rsvp = Rsvp.get(profile['id']) || Rsvp.new
       rsvp.id = profile['id']
@@ -96,7 +96,7 @@ class WeddingSite < Sinatra::Base
   def get_fb_profile
     graph = Koala::Facebook::API.new(session['access_token'])
     profile = graph.get_object('me')
-    friends = graph.get_connections('me','friends')
-    return [profile, friends]
+    #friends = graph.get_connections('me','friends')
+    return profile
   end
 end
